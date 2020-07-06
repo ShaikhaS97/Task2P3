@@ -22,16 +22,7 @@ if($con->query($sql)===TRUE){
 }
 
 
- if(isset($_POST['delete']))   
-    {
-       foreach ($_POST["checkbox"] as $id){
-       $de1 = "DELETE FROM Control WHERE PID='$id'";
-       if(mysqli_query($con, $de1))
-       echo "<b>Deletion Successful. </b>";
-       else
-       echo "ERROR: Could not execute";
-       }
-    }
+
   
 
 
